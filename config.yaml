@@ -1,0 +1,222 @@
+# =====================================================================
+# Veille IA : configuration
+# Tout ce que tu auras à ajuster au quotidien se trouve dans ce fichier.
+# =====================================================================
+
+settings:
+  max_articles: 10          # nombre d'articles dans la page du jour
+  window_hours: 40          # on ignore les articles plus vieux que ça
+  max_per_source: 2         # plafond par source (évite qu'un blog monopolise la page)
+  max_per_category: 4       # plafond par catégorie (garde la page variée)
+  min_score: 12             # sous ce score, l'article n'est pas retenu, même si la page reste courte
+  similarity_threshold: 0.82  # titres plus proches que ça = doublon
+  timeout_seconds: 20
+  timezone: Europe/Paris
+
+# Catégories : clé utilisée dans les sources, libellé affiché dans la page.
+categories:
+  labs: "Labs et modèles"
+  open: "Open source"
+  agents: "Agents et outils"
+  entreprise: "IA en entreprise"
+  ml_data: "ML et data"
+  recherche: "Recherche et analyse"
+  communaute: "Communauté"
+
+# Mots-clés pondérés. Un mot trouvé dans le titre compte double.
+# Un poids négatif pénalise (utile pour écarter le bruit).
+# "agent" matche aussi "agents" ; la casse est ignorée.
+keywords:
+  # agents
+  agentic: 4
+  agent: 3
+  multi-agent: 3
+  MCP: 3
+  Model Context Protocol: 3
+  tool use: 3
+  function calling: 2
+  computer use: 3
+  A2A: 2
+  orchestration: 2
+  guardrails: 2
+  evals: 2
+  observability: 2
+  # LLM et modèles
+  LLM: 2
+  large language model: 2
+  reasoning model: 3
+  open-weight: 3
+  open-source: 2
+  open source: 2
+  fine-tuning: 2
+  quantization: 2
+  inference: 2
+  context window: 2
+  RAG: 2
+  Claude: 2
+  GPT: 2
+  Gemini: 2
+  Llama: 2
+  llama.cpp: 2
+  Mistral: 2
+  Qwen: 2
+  DeepSeek: 2
+  Ollama: 2
+  vLLM: 2
+  # entreprise
+  enterprise: 2
+  governance: 2
+  ROI: 2
+  case study: 2
+  adoption: 1
+  compliance: 1
+  # ML et data
+  MLOps: 3
+  data platform: 2
+  data engineering: 2
+  data quality: 2
+  data governance: 2
+  lakehouse: 2
+  semantic layer: 2
+  vector database: 2
+  text-to-SQL: 2
+  dbt: 2
+  # bruit
+  webinar: -6
+  sponsored: -8
+  giveaway: -8
+  discount: -6
+  "we're hiring": -6
+  crypto: -4
+  price prediction: -8
+
+# Sources. Champs :
+#   name, url, category (obligatoires)
+#   weight             1 à 5 : confiance dans la source (défaut 3)
+#   min_keyword_score  score de mots-clés minimum pour garder un article
+#                      (utile pour les flux généralistes ou volumineux)
+#
+# Les URLs de flux sont à vérifier au premier lancement : la page du jour
+# liste en bas les flux en erreur.
+sources:
+  # ---- Labs et modèles propriétaires
+  - name: OpenAI
+    url: https://openai.com/news/rss.xml
+    category: labs
+    weight: 5
+  - name: Google DeepMind
+    url: https://deepmind.google/blog/rss.xml
+    category: labs
+    weight: 5
+  - name: Anthropic (flux non officiel)
+    # Anthropic ne publie pas de flux RSS ; ce dépôt communautaire en génère un.
+    # D'autres flux (research, engineering) y sont peut-être disponibles.
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml
+    category: labs
+    weight: 5
+  - name: AWS Machine Learning
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    category: entreprise
+    weight: 3
+    min_keyword_score: 2
+
+  # ---- Open source
+  - name: Hugging Face
+    url: https://huggingface.co/blog/feed.xml
+    category: open
+    weight: 5
+  - name: Interconnects
+    url: https://www.interconnects.ai/feed
+    category: open
+    weight: 5
+  - name: r/LocalLLaMA (top du jour)
+    # Reddit bloque parfois les IPs de GitHub Actions : si ce flux est en erreur, retire-le.
+    url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day
+    category: open
+    weight: 3
+    min_keyword_score: 2
+
+  # ---- Agents et outils
+  - name: Simon Willison
+    url: https://simonwillison.net/atom/everything/
+    category: agents
+    weight: 5
+  - name: Latent Space
+    url: https://www.latent.space/feed
+    category: agents
+    weight: 4
+  - name: LangChain
+    url: https://blog.langchain.com/rss/
+    category: agents
+    weight: 3
+  - name: Hamel Husain
+    url: https://hamel.dev/index.xml
+    category: agents
+    weight: 3
+
+  # ---- IA en entreprise
+  - name: VentureBeat IA
+    url: https://venturebeat.com/category/ai/feed/
+    category: entreprise
+    weight: 3
+    min_keyword_score: 2
+  - name: a16z (Substack)
+    url: https://www.a16z.news/feed
+    category: entreprise
+    weight: 2
+    min_keyword_score: 4
+
+  # ---- ML et data
+  - name: Chip Huyen
+    url: https://huyenchip.com/feed.xml
+    category: ml_data
+    weight: 4
+  - name: Eugene Yan
+    url: https://eugeneyan.com/rss/
+    category: ml_data
+    weight: 4
+  - name: Databricks
+    url: https://www.databricks.com/feed
+    category: ml_data
+    weight: 2
+    min_keyword_score: 4
+  - name: NVIDIA Technical Blog
+    url: https://developer.nvidia.com/blog/feed
+    category: ml_data
+    weight: 3
+    min_keyword_score: 3
+
+  # ---- Recherche et analyse
+  - name: Import AI
+    url: https://importai.substack.com/feed
+    category: recherche
+    weight: 4
+  - name: Ahead of AI
+    url: https://magazine.sebastianraschka.com/feed
+    category: recherche
+    weight: 4
+  - name: Lilian Weng
+    url: https://lilianweng.github.io/index.xml
+    category: recherche
+    weight: 4
+  - name: Microsoft Research
+    url: https://www.microsoft.com/en-us/research/feed/
+    category: recherche
+    weight: 3
+    min_keyword_score: 3
+  - name: arXiv cs.CL
+    # Très volumineux : seuls les papiers très liés à tes mots-clés passent.
+    url: https://rss.arxiv.org/rss/cs.CL
+    category: recherche
+    weight: 1
+    min_keyword_score: 6
+
+  # ---- Communauté (Hacker News, filtré par nombre de points)
+  - name: Hacker News (LLM)
+    url: https://hnrss.org/newest?q=LLM&points=150
+    category: communaute
+    weight: 3
+  - name: Hacker News (agents)
+    url: https://hnrss.org/newest?q=AI%20agents&points=100
+    category: communaute
+    weight: 3

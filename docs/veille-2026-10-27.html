@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 27 octobre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>mardi 27 octobre 2026</h1>
+  <p>10 articles retenus sur 201 candidats, 22 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Oct/26/gpt-61-terra/">GPT-6.1 Terra</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 13 h</span></div>
+  <p>GPT-6.1 Terra It&#x27;s always interesting to note which aspects of a new model are emphasized in the release announcement. In the case of GPT-6.1 Terra, OpenAI went with visual reasoning and computer use: We’re introducing GPT-6.1 Terra , a fast, efficient model that combines detailed visual reasoning and precise computer</p>
+  <div class="why">Mots-clés : computer use, LLM, GPT</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xgkzb9/qwen38_27b_on_one_rtx_5090_six_inference_engines/">Qwen3.8 27B on one RTX 5090: six inference engines benchmarked with and without DFlash2</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 7 h</span></div>
+  <p>Disclosure: I’m the author of TensorSharp. This English summary was adapted and edited with LLM assistance from the full benchmark report . The comparison covers llama.cpp, vLLM, SGLang, NInfer, velox-inferer, and TensorSharp on the same RTX 5090 32 GB, including decode throughput, long prompts, concurrent requests, im</p>
+  <div class="why">Mots-clés : LLM, inference, Llama, llama.cpp, vLLM</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xg3oe0/llm_tails_disciplined_al_coding_mode_understand/">LLM Tails Disciplined Al coding mode. Understand deeply, write minimally, never hallucinate, stay consistent. Based on Ponytail &amp; LLM Wiki</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 19 h</span></div>
+  <p>https://github.com/savadks95/LLM\_Tails I just published a GitHub repo a few days ago. It&#x27;s a mix of Ponytail and LLM Wiki. It helps developers reduce codebase size with minimal code. It reduces overall token usage and AI hallucinations, and a couple of other fantastic things. The image is the test result of developing</p>
+  <div class="why">Mots-clés : agent, LLM, open-source, Claude, Gemini</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/build-agentic-retrieval-on-a-managed-amazon-bedrock-knowledge-base-with-cdk/">Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 20 h</span></div>
+  <p>Build enterprise agentic retrieval on a Managed Amazon Bedrock Knowledge Base with the AWS CDK: an agent that routes across two knowledge bases, retrieves through the AgentCore Gateway, and returns grounded, cited answers, with seven layers of observability and both on-demand and continuous evaluation, all deployed as</p>
+  <div class="why">Mots-clés : agentic, agent, observability, enterprise</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/gpt-6-1-sol-coderabbit-code-security">GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 23 h</span></div>
+  <p>CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.</p>
+  <div class="why">Mots-clés : agent, GPT</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/introducing-gpt-6-1-terra">Introducing GPT-6.1 Terra</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>hier</span></div>
+  <p>Bringing fast and capable computer use to everyone</p>
+  <div class="why">Mots-clés : computer use, GPT</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2610.33012">Recursive Semantic Divergence for LLM Agent Consistency</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 9 h</span></div>
+  <p>arXiv:2610.33012v1 Announce Type: new Abstract: Large Language Model (LLM) agents with tool use exhibit inconsistent behavior across independent runs from identical states, calling different tools, producing contradictory outputs, or pursuing divergent strategies. This variability compounds over time and undermines dep</p>
+  <div class="why">Mots-clés : agent, tool use, LLM, large language model, fine-tuning</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2610.33015">SLICE-Mem: Salience-Gated Lightweight Information Curation for Efficient LLM Agent Memory</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 9 h</span></div>
+  <p>arXiv:2610.33015v1 Announce Type: new Abstract: Long-term memory enables large language model (LLM) agents to maintain personalized and temporally coherent interactions, but repeated LLM inference for memory admission, extraction, and organization introduces substantial cost and latency. We present SLICE-Mem, a lightwe</p>
+  <div class="why">Mots-clés : agent, LLM, large language model, inference, Qwen</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Oct/26/jason-koebler/">Quoting Jason Koebler</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 18 h</span></div>
+  <p>Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered some</p>
+  <div class="why">Mots-clés : LLM</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/">Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 20 h</span></div>
+  <p>Every time an agent takes a step, it re-reads its entire context before acting. Here is how prompt caching for OpenAI models on Amazon Bedrock lets your agent remember, cutting input cost and latency without resending the same tools, instructions, and history every turn.</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+</main>
+<footer><p>Généré à 14:37.</p><details><summary>2 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>a16z : HTTPError: 404 Client Error: Not Found for url: https://a16z.com/feed/</li></ul></details></footer>
+</body>
+</html>
