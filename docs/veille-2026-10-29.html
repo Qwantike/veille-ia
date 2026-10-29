@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 29 octobre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>jeudi 29 octobre 2026</h1>
+  <p>10 articles retenus sur 36 candidats, 22 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Oct/28/github-octoverse-2026/">GitHub Octoverse 2026</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 14 h</span></div>
+  <p>GitHub Octoverse 2026 I&#x27;m at GitHub Universe today (GitHub gave me a free ticket through their &quot;GitHub Stars&quot; program). EVP Jay Parikh just announced this year&#x27;s Octoverse report, and highlighted these numbers in particular: This is a pretty stark representation of the impact of agentic engineering on GitHub. In 2026,</p>
+  <div class="why">Mots-clés : agentic, agent, LLM</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/">Building an Agentic AI Platform on Amazon Bedrock AgentCore</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 12 h</span></div>
+  <p>Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separate inference and tool gateways, and a CI/CD evaluation pipeline that gates each agent befor</p>
+  <div class="why">Mots-clés : agentic, agent, open-source, inference</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/legora">Legora is building the agentic operating system for legal work</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 21 h</span></div>
+  <p>See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.</p>
+  <div class="why">Mots-clés : agentic</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Oct/28/vibe-game-development/">The October inflection point for vibe game development</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 17 h</span></div>
+  <p>I&#x27;ve written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we&#x27;ve reached a new inflection point in October 2026, and this time</p>
+  <div class="why">Mots-clés : agent, Claude, GPT</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/openai-servicenow-partnership-expansion">OpenAI and ServiceNow expand partnership across enterprise workflows</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 17 h</span></div>
+  <p>OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.</p>
+  <div class="why">Mots-clés : agent, enterprise</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://latent.space/p/ainews-gemini-4-carbon/">[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Latent Space</span><span>il y a 1 h</span></div>
+  <p>Google’s new frontier model leads independent evals, with access initially limited to trusted defenders.</p>
+  <div class="why">Mots-clés : evals, Gemini</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://latent.space/p/supabase/">Why Agents Love Supabase</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Latent Space</span><span>il y a 11 h</span></div>
+  <p>Paul Copplestone and Ant Wilson on building the backend for AI agents</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--communaute)">
+  <h2><a href="https://surgehq.ai/blog/dayjob-tax">Dayjob: Tax – evaluating AI agents on 50 professional tax assignments</a></h2>
+  <div class="meta"><span class="cat">Communauté</span><span>Hacker News (agents)</span><span>il y a 15 h</span><span>224 points</span> <a href="https://news.ycombinator.com/item?id=50275626">discussion</a></div>
+  
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/">Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 13 h</span></div>
+  <p>As QA test automation spreads across an organization, organizing tests and controlling who owns them becomes the real work. Part 3 of the QA Studio series on Amazon Nova Act adds applications that organize tests and report health metrics, plus team-based user management that controls who can see and change what.</p>
+  <div class="why">Mots-clés : agentic</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/">Gemini 4 Carbon: Our next frontier model</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>Google DeepMind</span><span>il y a 14 h</span></div>
+  
+  <div class="why">Mots-clés : Gemini</div>
+</article>
+</main>
+<footer><p>Généré à 08:12.</p><details><summary>2 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li></ul></details></footer>
+</body>
+</html>
