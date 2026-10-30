@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 30 octobre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>vendredi 30 octobre 2026</h1>
+  <p>10 articles retenus sur 157 candidats, 20 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--agents)">
+  <h2><a href="https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/">[AINews] Building AIE CODE: The top Coding Agent Conference</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Latent Space</span><span>il y a 3 h</span></div>
+  <p>Mistral’s open-weight release, frontier monitoring, and the day’s AI Twitter and Reddit recaps.</p>
+  <div class="why">Mots-clés : agent, open-weight, Mistral</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/">Building a multiplayer game world with autonomous Fable-class models</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 19 h</span></div>
+  <p>How I Built the Most AI-Pilled Company in the World Don&#x27;t be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what&#x27;s possible with agentic engineering against frontier models. Spawn is a massively multiplayer gami</p>
+  <div class="why">Mots-clés : agentic, agent, GPT</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xj182d/10_coding_agents_one_qwen_38_27b_same_llamaserver/">10 coding agents, one Qwen 3.8 27B, same llama-server: tokens and cache reuse differ more than pass rates</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 11 h</span></div>
+  <p>Part 2 of my agent test (part 1 was a 4B model) Hardware I used: MacBook Pro M5 Max, 64 GB. Qwen 3.8 27B Q4 on llama.cpp, thinking off. Setup same model and server for everyone 5 small coding tasks, each with a little trap each agent locked in a sandbox: it can only touch its own folder and only talk to the model auto-</p>
+  <div class="why">Mots-clés : agent, Llama, llama.cpp, Qwen, DeepSeek</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xix35p/release_swift_15_flash_next_heretic_v2/">Release: Swift 1.5 Flash Next - Heretic v2 - ReverseEngineer</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 14 h</span></div>
+  <p>This model was made in collaboration with u/jeffpeng3 (on huggingface) who developed the v2 heretic weights for this quant. He managed to preserve both reasoning ability and output length. Great work, and a big step up from his v1 weights. I made the quantization recipe and the imatrix recipe, and created the actual qu</p>
+  <div class="why">Mots-clés : agentic, tool use, function calling, LLM, quantization</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/">Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 20 h</span></div>
+  <p>NVIDIA Nemotron 3.5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon EKS, EKS Auto Mode, and Amazon SageMaker HyperPod EKS with NVIDIA Dynamo and vLLM.</p>
+  <div class="why">Mots-clés : agentic, tool use, vLLM</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Oct/29/ben-hylak/">Quoting Ben Hylak</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 22 h</span></div>
+  <p>every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our product, customers love the ui and love us very much. we&#x27;re special that way. — Ben Hylak Tags: model-context-protocol , ai</p>
+  <div class="why">Mots-clés : agent, MCP</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/">How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 19 h</span></div>
+  <p>MoEngage turned roughly 400 private REST APIs across 7 AWS Regions into permission-scoped agent tools with Amazon Bedrock AgentCore Gateway. No per-service MCP servers, no public endpoints, and no 400-tool context bloat. See how OpenAPI specs, Cedar policies, and managed Amazon VPC Lattice egress made it work.</p>
+  <div class="why">Mots-clés : agent, MCP</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2610.37684">An Introduction to Large Language Models for Scientists and Professionals</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 8 h</span></div>
+  <p>arXiv:2610.37684v1 Announce Type: new Abstract: Large Language Models (LLMs) have rapidly become important tools for science, education, medicine, and professional work. Despite their apparent simplicity from the user&#x27;s perspective, effective and responsible use requires an understanding of how these systems work, what</p>
+  <div class="why">Mots-clés : agent, LLM, large language model, inference, context window</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2610.37685">From Geometry to Behavior: How Instruction Exposure Unlocks Latent Rhetorical Directions in LLMs</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 8 h</span></div>
+  <p>arXiv:2610.37685v1 Announce Type: new Abstract: Language models do not merely memorize facts; they absorb rhetorical strategies from pretraining data, including the human tendency to reason by analogy. We ask: is this absorbed capability geometrically accessible before any instruction tuning, and what determines whethe</p>
+  <div class="why">Mots-clés : LLM, fine-tuning, inference, Llama, Qwen</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/mistral-large4">Welcome Le Chonk: Mistral Large 4 on Hugging Face</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>hier</span></div>
+  
+  <div class="why">Mots-clés : Mistral</div>
+</article>
+</main>
+<footer><p>Généré à 13:21.</p><details><summary>4 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li><li>Hacker News (LLM) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=LLM&amp;points=150</li><li>Hacker News (agents) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=AI%20agents&amp;points=100</li></ul></details></footer>
+</body>
+</html>
