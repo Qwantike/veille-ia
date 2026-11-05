@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 5 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>jeudi 5 novembre 2026</h1>
+  <p>10 articles retenus sur 101 candidats, 20 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xoglot/quantization_livestream_with_goats_of_inference/">Quantization livestream with goats of inference</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 2 h</span></div>
+  <p>Hey folks, it&#x27;s Merve from Hugging Face. Title of this post is super self explanatory, we are doing a quantization workshop livestream with Michael Goin (lead maintainer of vLLM at RedHat), Colin Kealty (aka bartowski at RedHat), Maxime Labonne and Aditya Tadimeti. I will shortly teach you how quantization works, moder</p>
+  <div class="why">Mots-clés : quantization, inference, Llama, llama.cpp, vLLM</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xnu9iv/rust_inference_engine_for_qwen_models_on_a_12_gb/">Rust inference engine for Qwen models on a 12 GB GPU, and it runs Qwen3.8-Flash-Next faster than the original Strata</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 20 h</span></div>
+  <p>I&#x27;ve been working on this for a while: RustingStrata. It&#x27;s an inference engine for Qwen GGUF models, written in pure Rust, no ggml. The CUDA kernels get compiled at startup with NVRTC, and the same kernels also run on Vulkan. It runs a lot of Qwen models by now: - Qwen3.5 / 3.6: 2B up to 35B-A3B - Qwen3: 4B dense, 30B-</p>
+  <div class="why">Mots-clés : inference, Llama, llama.cpp, Qwen</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/">How Indegene is modernizing and scaling enterprise data quality in life sciences</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 21 h</span></div>
+  <p>This post explores how Indegene built a production-grade, LLM-powered Data Quality Agent in its NEXT Unified Data Platform on AWS. The agent generates context-aware data quality rules, validates them, and produces ready-to-run SQL and Python under human-in-the-loop governance, helping life sciences organizations scale</p>
+  <div class="why">Mots-clés : agent, LLM, enterprise, governance, data platform</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/">Four layers of context engineering for production AI agents: How Deep Insight applies them in working code</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 21 h</span></div>
+  <p>In production AI agents, context management is the real bottleneck. This post presents a four-layer context engineering framework (architecture, prompts, file-based tools, and verification agents), implemented in working code from Deep Insight, an open source multi-agent data analysis solution on the Strands Agents SDK</p>
+  <div class="why">Mots-clés : agent, multi-agent, open source</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/4/datasette-llm/">datasette-llm 0.1a10</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 22 h</span></div>
+  <p>Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm</p>
+  <div class="why">Mots-clés : agent, LLM</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/devrev-enterprise-self-service">DevRev delivers autonomous self-service with GPT-6.1 Sol</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>hier</span></div>
+  <p>DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.</p>
+  <div class="why">Mots-clés : GPT, enterprise</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/3/datasette-agent/">datasette-agent 0.5a0</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>hier</span></div>
+  <p>Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with datasette-apps this means you can prompt a database-backed app</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.05771">How Well Can Large Language Models Impersonate Individual Authors? A Comparative Evaluation</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 9 h</span></div>
+  <p>arXiv:2611.05771v1 Announce Type: new Abstract: This study investigates the authorship impersonation capacity of six widely used large language models (LLMs): Gemini 3 Pro, Claude Opus, GPT 5.2, GPT 5.2 Pro, DeepSeek 3.2, and Grok 4.1 Fast. The evaluation was conducted using short product review texts selected to ensur</p>
+  <div class="why">Mots-clés : LLM, large language model, Claude, GPT, Gemini</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.05814">Learning When Human Decisions Matter: Executor-Relative Consultation Value for LLM Agents</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 9 h</span></div>
+  <p>arXiv:2611.05814v1 Announce Type: new Abstract: Large language models increasingly automate complex tasks, but human decision capacity does not scale with their capabilities. In many applications, humans remain essential for providing private context, authority, or judgments unavailable to the agent. We formulate human</p>
+  <div class="why">Mots-clés : agent, LLM, large language model</div>
+</article>
+<article style="--c:var(--ml_data)">
+  <h2><a href="https://www.databricks.com/blog/enterprise-case-open-weight-models-databricks">The Enterprise Case for Open-Weight Models on Databricks</a></h2>
+  <div class="meta"><span class="cat">ML et data</span><span>Databricks</span><span>il y a 18 h</span></div>
+  <p>As field engineers at Databricks, we spend our days inside enterprise AI deployments,...</p>
+  <div class="why">Mots-clés : open-weight, enterprise</div>
+</article>
+</main>
+<footer><p>Généré à 15:13.</p><details><summary>4 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li><li>Hacker News (LLM) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=LLM&amp;points=150</li><li>Hacker News (agents) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=AI%20agents&amp;points=100</li></ul></details></footer>
+</body>
+</html>
