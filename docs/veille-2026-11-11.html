@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 11 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>mercredi 11 novembre 2026</h1>
+  <p>10 articles retenus sur 105 candidats, 22 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/10/llm-gemini/">llm-gemini 0.36</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 17 h</span></div>
+  <p>Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for &quot;a subset of cyber defenders&quot;, but today it&#x27;s available to everyone else . This is Google&#x27;s best ever Gemini, priced at $2/million input and $10/million output at launch (that&#x27;s GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in pr</p>
+  <div class="why">Mots-clés : LLM, Claude, GPT, Gemini</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/qvac/botpsy">BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>il y a 8 h</span></div>
+  
+  <div class="why">Mots-clés : agentic</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xswmb7/the_surprising_effectiveness_of_deleting_weights/">The Surprising Effectiveness of Deleting Weights in LLM Post-Training</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 17 h</span></div>
+  <p>How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modification, matches full fine-tuning (FFT) at scale across three LLM post-training regimes: reinforcement learning with verifiable rewards, superv</p>
+  <div class="why">Mots-clés : agentic, LLM, large language model, fine-tuning</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/autonomous-treasury-agents-how-trovata-built-an-ai-native-solution-on-amazon-bedrock-and-agentcore/">Autonomous treasury agents: How Trovata built an AI-native solution on Amazon Bedrock and AgentCore</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 19 h</span></div>
+  <p>Learn how Trovata built autonomous treasury agents on Amazon Bedrock and Amazon Bedrock AgentCore, using an RBAC-secured architecture for bank-branded AI deployment and agentic workflows that move corporate treasury from manual operations to real-time decision-making at enterprise scale.</p>
+  <div class="why">Mots-clés : agentic, agent, enterprise</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xsocrj/my_08b_finetune_proofreads_spanish_at_138_ms_per/">My 0.8B fine-tune proofreads Spanish at 138 ms per sentence on a CPU</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 23 h</span></div>
+  <p>I have been building a Spanish proofreader that runs fully local, and it&#x27;s finally released, so I wanted to share how it went. It only corrects Spanish, but I think the approach works for other languages and narrow tasks too. If the project has audience, I will release the English proofreader version as well :) App run</p>
+  <div class="why">Mots-clés : evals, LLM, Claude, Gemini, Llama</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/how-tcs-built-an-agentic-test-orchestrator-with-amazon-bedrock-agentcore/">How TCS built an agentic test orchestrator with Amazon Bedrock AgentCore</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 20 h</span></div>
+  <p>Tata Consultancy Services (TCS) built an agentic test orchestrator on Amazon Bedrock AgentCore that turns requirements into executable, governed tests for its Banking, Financial Services, and Insurance (BFSI) clients. Learn how specialized agents, per-tenant isolation, and workload-aware execution cut testing effort by</p>
+  <div class="why">Mots-clés : agentic, agent</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://latent.space/p/resend/">Designing for Agents — Zeno Rocha, Resend</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Latent Space</span><span>il y a 17 h</span></div>
+  <p>Where does answer engine optimization (AEO) end and agent experience begin? Inside Resend, from the docs that help Claude Code pick an email API to the tools it uses to send.</p>
+  <div class="why">Mots-clés : agent, Claude</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/cogent-security">Cogent and OpenAI build cyber defense factories for enterprises</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>hier</span></div>
+  <p>Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.</p>
+  <div class="why">Mots-clés : agent, enterprise</div>
+</article>
+<article style="--c:var(--communaute)">
+  <h2><a href="https://pietromiotti.com/latest/maya-site/?maya">Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h</a></h2>
+  <div class="meta"><span class="cat">Communauté</span><span>Hacker News (agents)</span><span>il y a 1 h</span><span>185 points</span> <a href="https://news.ycombinator.com/item?id=50452455">discussion</a></div>
+  
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.13426">BioMem: Agentic Memory for Biomedical LLM Agents</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 8 h</span></div>
+  <p>arXiv:2611.13426v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated considerable potential in biomedical applications, while agentic memory systems have emerged as a promising approach to preserving and utilizing information across tasks and interactions. However, a fundamental question remai</p>
+  <div class="why">Mots-clés : agentic, agent, LLM, large language model, inference</div>
+</article>
+</main>
+<footer><p>Généré à 14:44.</p><details><summary>2 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li></ul></details></footer>
+</body>
+</html>
