@@ -150,5 +150,15 @@
 "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture": "2026-11-12",
 "https://huggingface.co/blog/3d-lora-finetuning": "2026-11-12",
 "https://databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work": "2026-11-12",
-"https://openai.com/index/jiostar-vijay-seshadri": "2026-11-12"
+"https://openai.com/index/jiostar-vijay-seshadri": "2026-11-12",
+"https://huggingface.co/blog/ggml-org/llama-cpp-v1": "2026-11-13",
+"https://reddit.com/r/LocalLLaMA/comments/1xut6z0/inferencekit_opensource_plugin_to_optimize_any": "2026-11-13",
+"https://reddit.com/r/LocalLLaMA/comments/1xumdj4/intel_arc_vulkan_prefill_got_a_dedicated_fa": "2026-11-13",
+"https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws": "2026-11-13",
+"https://simonwillison.net/2026/Nov/12/llm-gemini": "2026-11-13",
+"https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock": "2026-11-13",
+"https://arxiv.org/abs/2611.14925": "2026-11-13",
+"https://arxiv.org/abs/2611.14935": "2026-11-13",
+"https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite": "2026-11-13",
+"https://deepmind.google/blog/introducing-gemini-4-hydrogen": "2026-11-13"
 }
