@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 14 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>samedi 14 novembre 2026</h1>
+  <p>10 articles retenus sur 38 candidats, 22 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xvxyhj/can_openweight_llms_can_predict_the_effects_of/">Can open-weight LLMs can predict the effects of weight edits without running the model (9B–30B)</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 4 h</span></div>
+  <p>I’ve been experimenting with weight-space reading using Qwen and Muse models (9B–30B). The goal: can an LLM inspect raw model weights and predict the behavioral effects of weight edits without running the target model? A few findings: 🔹Qwen 27B reached 73.0% balanced accuracy on subtle edits with weight access, vs. 57.</p>
+  <div class="why">Mots-clés : agent, LLM, open-weight, open-source, Qwen</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/">Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B &amp; Flash Next [GGUF]</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 17 h</span></div>
+  <p>hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) &amp; Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF weights based on the Nace quantization of Qwen 9B, 27B, 35B and Flash-Next. I wil</p>
+  <div class="why">Mots-clés : agentic, agent, LLM, open source, quantization</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.interconnects.ai/p/open-source-ai-without-jensen">Open-source AI without Jensen</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Interconnects</span><span>il y a moins d'une heure</span></div>
+  <p>A decapitation. It’s time to rebuild.</p>
+  <div class="why">Mots-clés : open-source</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/">Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 13 h</span></div>
+  <p>GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers&#x27; no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about a week to a few hours and running batch inference every 30 minutes.</p>
+  <div class="why">Mots-clés : inference, MLOps</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/">How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>hier</span></div>
+  <p>Natera built SWARM, an agentic AI system on Amazon Bedrock AgentCore that captures institutional lab-operations knowledge and deploys it at scale. This post walks through the full architecture, from knowledge base construction to deployment and evaluation, delivering about 130x faster first response and 96.2% automated</p>
+  <div class="why">Mots-clés : agentic</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/introducing-chatgpt-wallet">Introducing ChatGPT Wallet</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 22 h</span></div>
+  <p>Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/business/customer-stories/shield">Shield helps technicians hand off legacy portal work with OpenAI</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>hier</span></div>
+  <p>Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/13/datasette-cluster-map/">datasette-cluster-map 0.19</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 14 h</span></div>
+  <p>Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here&#x27;s a map of power plants owned by California&#x27;s PG&amp;E , also demonstr</p>
+  
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/13/datasette-leaflet/">datasette-leaflet 0.3</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 14 h</span></div>
+  <p>Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the</p>
+  
+</article>
+<article style="--c:var(--ml_data)">
+  <h2><a href="https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/">Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA</a></h2>
+  <div class="meta"><span class="cat">ML et data</span><span>NVIDIA Technical Blog</span><span>il y a 18 h</span></div>
+  <p>AI applications at the edge often need to run multiple neural networks within limited compute and power budgets. NVIDIA Deep Learning Accelerator (DLA)...</p>
+  <div class="why">Mots-clés : inference</div>
+</article>
+</main>
+<footer><p>Généré à 14:09.</p><details><summary>2 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li></ul></details></footer>
+</body>
+</html>

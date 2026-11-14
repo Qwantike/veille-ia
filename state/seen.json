@@ -160,5 +160,15 @@
 "https://arxiv.org/abs/2611.14925": "2026-11-13",
 "https://arxiv.org/abs/2611.14935": "2026-11-13",
 "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite": "2026-11-13",
-"https://deepmind.google/blog/introducing-gemini-4-hydrogen": "2026-11-13"
+"https://deepmind.google/blog/introducing-gemini-4-hydrogen": "2026-11-13",
+"https://reddit.com/r/LocalLLaMA/comments/1xvxyhj/can_openweight_llms_can_predict_the_effects_of": "2026-11-14",
+"https://reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace": "2026-11-14",
+"https://interconnects.ai/p/open-source-ai-without-jensen": "2026-11-14",
+"https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1": "2026-11-14",
+"https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore": "2026-11-14",
+"https://openai.com/index/introducing-chatgpt-wallet": "2026-11-14",
+"https://openai.com/business/customer-stories/shield": "2026-11-14",
+"https://simonwillison.net/2026/Nov/13/datasette-cluster-map": "2026-11-14",
+"https://simonwillison.net/2026/Nov/13/datasette-leaflet": "2026-11-14",
+"https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": "2026-11-14"
 }
