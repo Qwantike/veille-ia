@@ -170,5 +170,11 @@
 "https://openai.com/business/customer-stories/shield": "2026-11-14",
 "https://simonwillison.net/2026/Nov/13/datasette-cluster-map": "2026-11-14",
 "https://simonwillison.net/2026/Nov/13/datasette-leaflet": "2026-11-14",
-"https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": "2026-11-14"
+"https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": "2026-11-14",
+"https://simonwillison.net/2026/Nov/14/datasette-llm": "2026-11-15",
+"https://reddit.com/r/LocalLLaMA/comments/1xwerbo/qwen3_4b_8b_14b_at_27_bits_per_weight_with_leech": "2026-11-15",
+"https://reddit.com/r/LocalLLaMA/comments/1xwv5p4/13gpu_asrock_mining_motherboard_for_local_llms": "2026-11-15",
+"https://magazine.sebastianraschka.com/p/understanding-positional-embeddings": "2026-11-15",
+"https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard": "2026-11-15",
+"https://simonwillison.net/2026/Nov/14/datasette-vega": "2026-11-15"
 }

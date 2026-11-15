@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 15 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>dimanche 15 novembre 2026</h1>
+  <p>6 articles retenus sur 20 candidats, 22 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/14/datasette-llm/">datasette-llm 0.1a11</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 13 h</span></div>
+  <p>Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web prot</p>
+  <div class="why">Mots-clés : agent, LLM, Llama, llama.cpp, Qwen</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xwerbo/qwen3_4b_8b_14b_at_27_bits_per_weight_with_leech/">Qwen3 4B / 8B / 14B at ~2.7 bits per weight with Leech lattice quantization. Beats IQ2_S on quality at the same size, loses on speed [open source, Rust + CUDA]</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 15 h</span></div>
+  <p>https://preview.redd.it/dfiyzcvakn1i1.png?width=2356&amp;format=png&amp;auto=webp&amp;s=41301d5648563b26353cba70079fb6afcd9bf329 hi r/LocalLLaMA , I&#x27;ve been working for a while on an independent Rust implementation of LLVQ, the Leech lattice quantization paper from Qualcomm ( arXiv:2603.11021 ), with my own CUDA kernel to actually</p>
+  <div class="why">Mots-clés : open source, quantization, Llama, llama.cpp</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xwv5p4/13gpu_asrock_mining_motherboard_for_local_llms/">13-GPU ASRock Mining Motherboard for Local LLMs?</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a moins d'une heure</span></div>
+  <p>​ Found a used mining rig with: ASRock 13-GPU motherboard (likely H110 Pro BTC+) Intel i3-7100 12 PCIe risers 2200–2500W PSU No RAM or SSD Planning to use it with multiple RTX 3090s for Qwen/DeepSeek inference. Has anyone tried this? How much would PCIe x1 bottleneck performance? Is it worth buying, or should I go with</p>
+  <div class="why">Mots-clés : LLM, inference, Qwen, DeepSeek</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://magazine.sebastianraschka.com/p/understanding-positional-embeddings">Understanding Positional Embeddings in Modern LLMs</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>Ahead of AI</span><span>il y a 1 h</span></div>
+  <p>The Methods Behind How LLMs Represent Token Positions</p>
+  <div class="why">Mots-clés : LLM</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/">Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>hier</span></div>
+  <p>Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then measure cost per solved task for a routed model group against single-model baselines.</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/14/datasette-vega/">datasette-vega 0.7</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 20 h</span></div>
+  <p>Release: datasette-vega 0.7 A new release of Datasette&#x27;s longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better</p>
+  
+</article>
+</main>
+<footer><p>Généré à 14:37.</p><details><summary>2 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li></ul></details></footer>
+</body>
+</html>
