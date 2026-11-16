@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 16 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>lundi 16 novembre 2026</h1>
+  <p>8 articles retenus sur 85 candidats, 20 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xx7qbf/i_have_created_a_tool_to_observe_what_happens/">I have created a tool to observe what happens inside an LLM. Also allows for the comparison of two quantizations of the same model to see at what point they diverge, token by token</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 17 h</span></div>
+  <p>What changes between different quantizations of the same model? And what if you could SEE what actually sets them apart? To help answer that question, I’ve created a small project called inside-llm—an open-source tool that loads one or two GGUF models using llama.cpp and displays, right in your browser, what the model</p>
+  <div class="why">Mots-clés : LLM, open-source, quantization, Llama, llama.cpp</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xx0fqn/cpuonly_boost_for_q2_0_on_avxvnni_pull_request/">CPU-only boost for Q2_0 on AVX-VNNI · Pull Request #26348 · ggml-org/llama.cpp</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 22 h</span></div>
+  <p>Measurements: mean ± sample standard deviation in tok/s, 3 runs after normal warmup (16GB of RAM on the AMD EPYC 9645 using eight CPU cores) Model Test Upstream master VNNI + VBMI Speedup Bonsai 1.7B pp512 142.517 ± 0.589 186.373 ± 1.582 1.31× Bonsai 1.7B tg128 70.435 ± 2.061 68.422 ± 9.055 0.97× Bonsai 4B pp512 53.430</p>
+  <div class="why">Mots-clés : inference, Llama, llama.cpp, DeepSeek</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/15/datasette-agent/">datasette-agent 0.6a0</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>hier</span></div>
+  <p>Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Tags: datasette-agent , llm , dataset</p>
+  <div class="why">Mots-clés : agent, LLM</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/advancing-computer-use-for-healthcare-teams">Advancing computer-use agents for healthcare teams</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 9 h</span></div>
+  
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.17780">LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 10 h</span></div>
+  <p>arXiv:2611.17780v1 Announce Type: new Abstract: Frontier LLM agents that query databases with tools are among the most accurate text-to-SQL systems, but per-query calls to a hosted model are slow, costly, and expose sensitive organizational queries to external APIs. For example, a Claude Opus 5.5 agent serving 10,000 q</p>
+  <div class="why">Mots-clés : agent, LLM, Claude, text-to-SQL</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.17931">MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 10 h</span></div>
+  <p>arXiv:2611.17931v1 Announce Type: new Abstract: In mineral exploration, verifying geological hypotheses relies on designing a variety of geochemical experiments. While large language model (LLM) agents increasingly automate downstream geoscientific data analysis, a crucial upstream capability remains largely unexplored</p>
+  <div class="why">Mots-clés : agent, LLM, large language model</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">datasette-maplibre 0.1a0</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 15 h</span></div>
+  <p>Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built most of this with a single prompt to Claude Fable 5.2: Look</p>
+  <div class="why">Mots-clés : LLM, Claude</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare">More ways to move care forward with ChatGPT for Healthcare</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 9 h</span></div>
+  <p>Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+</main>
+<footer><p>Généré à 16:08.</p><details><summary>4 flux en erreur</summary><ul><li>VentureBeat IA : ConnectionError: (&#x27;Connection aborted.&#x27;, ConnectionResetError(104, &#x27;Connection reset by peer&#x27;))</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li><li>Hacker News (LLM) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=LLM&amp;points=150</li><li>Hacker News (agents) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=AI%20agents&amp;points=100</li></ul></details></footer>
+</body>
+</html>
