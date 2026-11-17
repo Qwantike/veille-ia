@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 17 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>mardi 17 novembre 2026</h1>
+  <p>10 articles retenus sur 207 candidats, 23 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xyamk6/maxwellmodelmaxwellv1flash_hugging_face/">maxwell-model/Maxwell-V1-Flash · Hugging Face</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 11 h</span></div>
+  <p>Model Introduction Maxwell-V1.0-Flash is a next-generation, high-performance Mixture-of-Experts (MoE) language model developed by the Maxwell Team, with 35B total parameters and 3B active parameters per token (both excluding embeddings) and support for context lengths up to 256K tokens. It is designed for strong reason</p>
+  <div class="why">Mots-clés : agentic, agent, function calling, LLM, inference</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base/">Build memory-aware AI agents with Agentic Retrieve on Amazon Bedrock Managed Knowledge Base</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 16 h</span></div>
+  <p>Amazon Bedrock Managed Knowledge Base and Amazon Bedrock AgentCore memory now store conversations, extract facts, and bring long-term memory into a single AgenticRetrieveStream call. This post shows how to build a memory-aware, multi-user assistant where each user sees only the documents they may read and each user&#x27;s m</p>
+  <div class="why">Mots-clés : agentic, agent</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing/">Taxonomy of multi-agent design patterns, anti-patterns, and lessons from manufacturing</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 17 h</span></div>
+  <p>Multi-agent coordination is a distributed systems problem, not a model problem. This post gives a field-tested taxonomy of multi-agent design patterns and anti-patterns, a framework for deciding when multiple agents are warranted, and how to build cost-efficient, reliable systems on AWS.</p>
+  <div class="why">Mots-clés : agent, multi-agent</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1xxvr5z/under_9gb_model_comparison/">Under 9gb model comparison</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>r/LocalLLaMA (top du jour)</span><span>il y a 21 h</span></div>
+  <p>Scores are lab-reported so take them with a grain of salt. Specs Model Org Params (total/active) Context Modality License K2-Horizon-7B IFM 7B dense 512K text Apache-2.0 Granite 4.2-8B IBM 8B dense (thinking) 128K (512K ext.) text Apache-2.0 Qwen3.5-9B Qwen 9B hybrid (delta-net, thinking) 262K (~1M ext.) text + vision</p>
+  <div class="why">Mots-clés : agentic, MCP, tool use, Qwen</div>
+</article>
+<article style="--c:var(--ml_data)">
+  <h2><a href="https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/">NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0</a></h2>
+  <div class="meta"><span class="cat">ML et data</span><span>NVIDIA Technical Blog</span><span>il y a 23 h</span></div>
+  <p>Agentic workloads are demanding more from inference systems. AI agents carry growing conversation histories across turns and generate a mix of reasoning, tool...</p>
+  <div class="why">Mots-clés : agentic, agent, inference</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/openrouter">Hugging Face and OpenRouter join forces to make open-weight models easy to run</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>hier</span></div>
+  
+  <div class="why">Mots-clés : open-weight</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.18585">Read, Route, Patch: Robust Test-Time Evolution for LLM Agents</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 10 h</span></div>
+  <p>arXiv:2611.18585v1 Announce Type: new Abstract: Large Language Model (LLM)-based agents can improve long- horizon interactive decision-making through test-time evolu- tion, yet existing methods face three information bottlenecks: memory retrieval overemphasizes textual similarity, candi- date harnesses are often behavi</p>
+  <div class="why">Mots-clés : agent, LLM, large language model, GPT, Mistral</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.18627">FlashREINFORCE: Critic-Free Single-Rollout Asynchronous RL for Agentic Language Models</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 10 h</span></div>
+  <p>arXiv:2611.18627v1 Announce Type: new Abstract: Asynchronous reinforcement learning suits long-horizon agents with irregular rollout times, but group-relative updates require repeated rollouts of each prompt. However, group-based sampling limits prompt coverage at a fixed rollout budget and introduces group synchroniza</p>
+  <div class="why">Mots-clés : agentic, agent, tool use, Qwen, DeepSeek</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/16/llm/">llm 0.37.3</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 15 h</span></div>
+  <p>Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM&#x27;s logging code . Short version: in SQLite 3.54.0 the following SQL: select json_object(&#x27;a&#x27;, (select json_arr</p>
+  <div class="why">Mots-clés : LLM</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/">TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficient</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>Microsoft Research</span><span>il y a 22 h</span></div>
+  <p>AI coding agents can waste time and tokens relearning the same lessons. TokenEconomizer is an open-source plugin that builds on past sessions to cut costs while maintaining task success. It’s a path toward coding agents that learn not only how to solve tasks, but also how to spend computation more effectively. The post</p>
+  <div class="why">Mots-clés : agent, open-source</div>
+</article>
+</main>
+<footer><p>Généré à 16:39.</p><details><summary>1 flux en erreur</summary><ul><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li></ul></details></footer>
+</body>
+</html>
