@@ -194,5 +194,15 @@
 "https://arxiv.org/abs/2611.18585": "2026-11-17",
 "https://arxiv.org/abs/2611.18627": "2026-11-17",
 "https://simonwillison.net/2026/Nov/16/llm": "2026-11-17",
-"https://microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient": "2026-11-17"
+"https://microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient": "2026-11-17",
+"https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents": "2026-11-18",
+"https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol": "2026-11-18",
+"https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore": "2026-11-18",
+"https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-agentic-ai-a-phased-roadmap-for-platform-and-application-teams": "2026-11-18",
+"https://openai.com/index/introducing-gpt-6-2-astra-sol": "2026-11-18",
+"https://arxiv.org/abs/2611.21647": "2026-11-18",
+"https://arxiv.org/abs/2611.21648": "2026-11-18",
+"https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": "2026-11-18",
+"https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol": "2026-11-18",
+"https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse": "2026-11-18"
 }

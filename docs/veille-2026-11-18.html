@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 18 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>mercredi 18 novembre 2026</h1>
+  <p>10 articles retenus sur 120 candidats, 21 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/">External sandboxes for coding agents</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 16 h</span></div>
+  <p>External sandboxes for coding agents I&#x27;ve been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Rad</p>
+  <div class="why">Mots-clés : agent, LLM, Claude</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/">GPT‑6.2 Astra and GPT‑6.2 Sol</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 16 h</span></div>
+  <p>GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They&#x27;re available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80%</p>
+  <div class="why">Mots-clés : agentic, LLM, Claude, GPT, Gemini</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore/">How LoanPro built an agentic AI loan servicing assistant with Amazon Bedrock AgentCore</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 22 h</span></div>
+  <p>LoanPro worked with AWS Partner AllCloud and the AWS Generative AI Innovation Center to build a multi-agent AI assistant on Amazon Bedrock and Amazon Bedrock AgentCore. It gives loan servicing agents instant borrower context and next-best-action recommendations, reducing customer call times by up to 15 percent.</p>
+  <div class="why">Mots-clés : agentic, agent, multi-agent</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-agentic-ai-a-phased-roadmap-for-platform-and-application-teams/">Responsible AI for agentic AI: A phased roadmap for platform and application teams</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 22 h</span></div>
+  <p>Enterprises adopting agentic AI at scale need platforms that embed responsible AI from the start. This post gives platform and application teams a three-phase roadmap (governance foundation, pilot deployment, and evaluation and hardening) that maps the AWS Responsible AI Lens pillars to each phase, with guidance on whe</p>
+  <div class="why">Mots-clés : agentic, enterprise, governance</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol">Introducing GPT-6.2 Astra and Sol</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 21 h</span></div>
+  <p>Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.</p>
+  <div class="why">Mots-clés : computer use, GPT</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.21647">FieldGuide: A Corpus Map for Token-Efficient Agentic Document Exploration</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 10 h</span></div>
+  <p>arXiv:2611.21647v1 Announce Type: new Abstract: Generative AI agents can help journalists explore large document collections. But exploratory workflows can require substantial token use and time, especially when the task is broad and the relevant subquestions are not yet known. This paper introduces FieldGuide, an agen</p>
+  <div class="why">Mots-clés : agentic, agent, RAG</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.21648">Can an LLM dream? Testing the overfitted brain hypothesis on an agent with text memory</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 10 h</span></div>
+  <p>arXiv:2611.21648v1 Announce Type: new Abstract: Hoel (2021) proposed that dreams distort replayed experience so that the brain does not overfit to recent events. We test this hypothesis on an LLM agent (Claude Opus 5.5) that stores what it learns in a text memory and rewrites that memory each night from the day&#x27;s conve</p>
+  <div class="why">Mots-clés : agent, LLM, Claude</div>
+</article>
+<article style="--c:var(--ml_data)">
+  <h2><a href="https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/">Co-Designing Sparse Attention for Efficient Long-Context Inference</a></h2>
+  <div class="meta"><span class="cat">ML et data</span><span>NVIDIA Technical Blog</span><span>il y a 21 h</span></div>
+  <p>Agentic workloads, long documents, and large codebases are pushing context lengths from tens of thousands of tokens to hundreds of thousands. At those lengths,...</p>
+  <div class="why">Mots-clés : agentic, inference</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/">[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Latent Space</span><span>il y a 4 h</span></div>
+  <p>November 17, 2026 — GPT-6.2 Astra and Sol lower benchmark costs. Early testers disagree on what Astra is like to work with.</p>
+  <div class="why">Mots-clés : GPT</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse">Time-Series Models in the Streamhouse: A New Frontier and Use Cases</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>il y a moins d'une heure</span></div>
+  
+  
+</article>
+</main>
+<footer><p>Généré à 16:17.</p><details><summary>3 flux en erreur</summary><ul><li>r/LocalLLaMA (top du jour) : HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day</li><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li></ul></details></footer>
+</body>
+</html>
