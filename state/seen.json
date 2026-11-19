@@ -204,5 +204,15 @@
 "https://arxiv.org/abs/2611.21648": "2026-11-18",
 "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": "2026-11-18",
 "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol": "2026-11-18",
-"https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse": "2026-11-18"
+"https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse": "2026-11-18",
+"https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock": "2026-11-19",
+"https://aws.amazon.com/blogs/machine-learning/from-reporting-to-reasoning-getting-enterprise-data-ready-for-ai-agents": "2026-11-19",
+"https://simonwillison.net/2026/Nov/18/daniel-stenberg": "2026-11-19",
+"https://arxiv.org/abs/2611.23403": "2026-11-19",
+"https://arxiv.org/abs/2611.23533": "2026-11-19",
+"https://openai.com/business/customer-stories/sumitomo-life": "2026-11-19",
+"https://deepmind.google/blog/introducing-gemini-4-neon": "2026-11-19",
+"https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time": "2026-11-19",
+"https://huggingface.co/blog/moe-expert-streaming": "2026-11-19",
+"https://slowchronicle.com/posts/llm-assisted-reverse-engineering": "2026-11-19"
 }
