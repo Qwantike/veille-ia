@@ -214,5 +214,15 @@
 "https://deepmind.google/blog/introducing-gemini-4-neon": "2026-11-19",
 "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time": "2026-11-19",
 "https://huggingface.co/blog/moe-expert-streaming": "2026-11-19",
-"https://slowchronicle.com/posts/llm-assisted-reverse-engineering": "2026-11-19"
+"https://slowchronicle.com/posts/llm-assisted-reverse-engineering": "2026-11-19",
+"https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad": "2026-11-20",
+"https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers": "2026-11-20",
+"https://aws.amazon.com/blogs/machine-learning/from-learning-to-leaderboard-how-cisco-upskilled-1200-engineers-in-agentic-ai-with-aws-ai-league": "2026-11-20",
+"https://arxiv.org/abs/2611.24943": "2026-11-20",
+"https://arxiv.org/abs/2611.25071": "2026-11-20",
+"https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents": "2026-11-20",
+"https://latent.space/p/linear-scaling": "2026-11-20",
+"https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender": "2026-11-20",
+"https://simonwillison.net/2026/Nov/18/llm-gemini": "2026-11-20",
+"https://anthropic.com/news/ipo-close": "2026-11-20"
 }
