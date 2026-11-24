@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 24 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>mardi 24 novembre 2026</h1>
+  <p>10 articles retenus sur 162 candidats, 20 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--communaute)">
+  <h2><a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agents work for their parent companies, not for you</a></h2>
+  <div class="meta"><span class="cat">Communauté</span><span>Hacker News (LLM)</span><span>il y a 4 h</span><span>574 points</span> <a href="https://news.ycombinator.com/item?id=50627340">discussion</a></div>
+  
+  <div class="why">Mots-clés : agent, LLM</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/24/datasette-agent/">datasette-agent 0.7a1</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 13 h</span></div>
+  <p>Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user in</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://simonwillison.net/2026/Nov/23/glm-54/">GLM-5.4: Toward Generalized Coding with Our First Loop Transformer</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Simon Willison</span><span>il y a 17 h</span></div>
+  <p>GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It&#x27;s their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight</p>
+  <div class="why">Mots-clés : agentic, LLM</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.28445">Muted Distillation: Sealing Reasoning from Teacher Unlocks Token-Efficient Agents</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 12 h</span></div>
+  <p>arXiv:2611.28445v1 Announce Type: new Abstract: On-policy distillation (OPD) is commonly adopted as one of the components in post-training of large language models (LLMs), but in multi-turn agentic tasks we find that the student model increases their reasoning lengths after training. Our empirical analysis shows that t</p>
+  <div class="why">Mots-clés : agentic, agent, LLM, large language model</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.28517">Digital Twins for Multi-Agent Systems: When to Trust, What to Change</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 12 h</span></div>
+  <p>arXiv:2611.28517v1 Announce Type: new Abstract: Digital twins of agent networks need to flag unreliable forecasts and help users choose interventions. Both decisions depend on what happens over several steps: an error can spread through the network, and an edit whose trajectory is easy to predict may still yield a poor</p>
+  <div class="why">Mots-clés : agent, multi-agent</div>
+</article>
+<article style="--c:var(--ml_data)">
+  <h2><a href="https://www.databricks.com/blog/sharing-catalog-metadata-across-data-platforms-engines-and-agents">Sharing catalog metadata across data platforms, engines, and agents</a></h2>
+  <div class="meta"><span class="cat">ML et data</span><span>Databricks</span><span>il y a 15 h</span></div>
+  <p>We’re excited to announce support for catalog labels – a new capability in the Apache...</p>
+  <div class="why">Mots-clés : agent, data platform</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/business/customer-stories/richpanel-ai-customer-support">Richpanel helps companies automate 50% of support in 30 days</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>hier</span></div>
+  <p>Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.</p>
+  <div class="why">Mots-clés : agent, GPT</div>
+</article>
+<article style="--c:var(--entreprise)">
+  <h2><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/">Introducing the Amazon Bedrock Trusted Access API with Anthropic’s Enterprise Frontier Safeguards and Enterprise Data Controls</a></h2>
+  <div class="meta"><span class="cat">IA en entreprise</span><span>AWS Machine Learning</span><span>il y a 12 h</span></div>
+  <p>Amazon Bedrock now offers a trusted access program API: one place to discover, request, and enroll in model provider programs. The first two offerings, in public preview, are Anthropic&#x27;s Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC), which give you control over your data when you use Claude Fa</p>
+  <div class="why">Mots-clés : Claude, enterprise</div>
+</article>
+<article style="--c:var(--labs)">
+  <h2><a href="https://openai.com/index/introducing-shirudo">OpenAI and Cisco introduce Shirudo</a></h2>
+  <div class="meta"><span class="cat">Labs et modèles</span><span>OpenAI</span><span>il y a 19 h</span></div>
+  <p>OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.</p>
+  <div class="why">Mots-clés : open-source</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance">Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>il y a moins d'une heure</span></div>
+  
+  
+</article>
+</main>
+<footer><p>Généré à 18:08.</p><details><summary>4 flux en erreur</summary><ul><li>r/LocalLLaMA (top du jour) : HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day</li><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li><li>Import AI : HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed</li><li>Hacker News (agents) : HTTPError: 502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=AI%20agents&amp;points=100</li></ul></details></footer>
+</body>
+</html>
