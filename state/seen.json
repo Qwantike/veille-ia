@@ -255,5 +255,11 @@
 "https://arxiv.org/abs/2611.31263": "2026-11-25",
 "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities": "2026-11-25",
 "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab": "2026-11-25",
-"https://databricks.com/blog/agentic-cdp-data-modeling-data-foundation": "2026-11-25"
+"https://databricks.com/blog/agentic-cdp-data-modeling-data-foundation": "2026-11-25",
+"https://huggingface.co/blog/training-swarms": "2026-11-26",
+"https://huggingface.co/blog/ggml-org/llamacpp-amd-bench": "2026-11-26",
+"https://simonwillison.net/2026/Nov/26/jack-despain-zhou": "2026-11-26",
+"https://simonwillison.net/2026/Nov/25/datasette-charts": "2026-11-26",
+"https://arxiv.org/abs/2611.33700": "2026-11-26",
+"https://arxiv.org/abs/2611.33242": "2026-11-26"
 }
