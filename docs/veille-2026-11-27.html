@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille IA, 27 novembre 2026</title>
+<style>
+:root{
+  --bg:#f3f5f2; --ink:#1b2220; --muted:#5b6762; --rule:#d3dad6; --link:#0a5c8f;
+  --labs:#2f5fd0; --open:#1d8a5a; --agents:#b8572a; --entreprise:#7a4fb0;
+  --ml_data:#a8841a; --recherche:#c0392b; --communaute:#5f6f7a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121715; --ink:#e4eae6; --muted:#97a39d; --rule:#2b3531; --link:#6cb6ec;
+  --labs:#7da2ff; --open:#4fcf93; --agents:#f09a6c; --entreprise:#b99aea;
+  --ml_data:#e0bd52; --recherche:#f2877a; --communaute:#9fb0bb;
+}}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink)}
+body{margin:0 auto;max-width:44rem;padding:3rem 1.25rem 4rem;
+  font:17px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit}
+header{margin-bottom:2.5rem}
+header h1{font-size:2.6rem;line-height:1.1;font-weight:600;margin:0 0 .6rem;letter-spacing:-.015em}
+header p{margin:0;color:var(--muted);font:.95rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header nav{margin-top:.8rem;font:.9rem system-ui,sans-serif}
+header nav a{color:var(--link)}
+article{border-left:4px solid var(--c,var(--rule));padding:.1rem 0 .1rem 1rem;margin:0 0 1.9rem}
+article h2{font-size:1.28rem;line-height:1.3;font-weight:600;margin:0 0 .25rem}
+article h2 a{text-decoration:none}
+article h2 a:hover{text-decoration:underline;text-underline-offset:.15em}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);
+  display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.4rem}
+.meta .cat{color:var(--c);font-weight:600}
+article p{margin:0;color:var(--ink);opacity:.86;font-size:.97rem}
+.why{margin-top:.4rem;font:.8rem system-ui,sans-serif;color:var(--muted)}
+.empty{padding:1rem 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);
+  font:.85rem/1.5 system-ui,sans-serif;color:var(--muted)}
+footer summary{cursor:pointer}
+footer ul{margin:.5rem 0 0;padding-left:1.1rem}
+.days{list-style:none;padding:0;margin:0}
+.days li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;justify-content:space-between}
+.days a{text-decoration:none;font-size:1.1rem}
+.days a:hover{text-decoration:underline}
+.days span{font:.85rem system-ui,sans-serif;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+@media (max-width:520px){header h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>vendredi 27 novembre 2026</h1>
+  <p>6 articles retenus sur 74 candidats, 22 flux lus.</p>
+  <nav><a href="index.html">Jours précédents</a></nav>
+</header>
+<main>
+<article style="--c:var(--communaute)">
+  <h2><a href="https://techstackups.com/articles/google-workspace-ai-agents-mcp/">Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can&#x27;t Send Email</a></h2>
+  <div class="meta"><span class="cat">Communauté</span><span>Hacker News (agents)</span><span>hier</span><span>386 points</span> <a href="https://news.ycombinator.com/item?id=50653477">discussion</a></div>
+  
+  <div class="why">Mots-clés : agent, MCP</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin">Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>hier</span></div>
+  
+  <div class="why">Mots-clés : fine-tuning, inference</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2611.34440">vSFT: Learning to Verbally Tune Agents at Test Time</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 11 h</span></div>
+  <p>arXiv:2611.34440v1 Announce Type: cross Abstract: Large language model agents are increasingly improved via agentic reinforcement learning, which can be on-policy but suffers from expensive rollouts and sparse rewards, limiting its application at test time. In this paper, we present a verbally Supervised Fine-Tuning (v</p>
+  <div class="why">Mots-clés : agentic, agent, large language model, fine-tuning</div>
+</article>
+<article style="--c:var(--recherche)">
+  <h2><a href="https://arxiv.org/abs/2607.21570">MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education</a></h2>
+  <div class="meta"><span class="cat">Recherche et analyse</span><span>arXiv cs.CL</span><span>il y a 11 h</span></div>
+  <p>arXiv:2607.21570v2 Announce Type: replace Abstract: Large Language Models (LLMs) show promise for medical education, but most existing systems focus on localized interactions such as question answering or single-turn feedback, rather than organizing an entire clinical case into a decision-centered learning trajectory.</p>
+  <div class="why">Mots-clés : orchestration, LLM, large language model, open-source, fine-tuning</div>
+</article>
+<article style="--c:var(--agents)">
+  <h2><a href="https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/">How Clay Builds GTM Agents — Jeff Barg, Head of AI</a></h2>
+  <div class="meta"><span class="cat">Agents et outils</span><span>Latent Space</span><span>il y a 17 h</span></div>
+  <p>How $1,500 could qualify every company in the world, why customers hate the model selector, and how Clay is building go-to-market infrastructure for every agent</p>
+  <div class="why">Mots-clés : agent</div>
+</article>
+<article style="--c:var(--open)">
+  <h2><a href="https://huggingface.co/blog/video-trainium3">Taking Trainium3 to the Track: Generating Videos with LTX-2.5</a></h2>
+  <div class="meta"><span class="cat">Open source</span><span>Hugging Face</span><span>il y a 16 h</span></div>
+  
+  
+</article>
+</main>
+<footer><p>Généré à 17:19.</p><details><summary>2 flux en erreur</summary><ul><li>r/LocalLLaMA (top du jour) : HTTPError: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day</li><li>VentureBeat IA : HTTPError: 429 Client Error: Too Many Requests for url: https://venturebeat.com/category/ai/feed/</li></ul></details></footer>
+</body>
+</html>
